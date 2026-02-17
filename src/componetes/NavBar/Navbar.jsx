@@ -34,10 +34,10 @@ const NavBar = () => {
               menuOpen ? "d-flex flex-column" : "d-none"
             } d-md-flex gap-3`}
           >
-            <li>Inicio</li>
+            {/* <li>Inicio</li>
             <li>Discografía</li>
             <li>Fechas</li>
-            <li>Contacto</li>
+            <li>Contacto</li> */}
           </ul>
         </div>
       </nav>
