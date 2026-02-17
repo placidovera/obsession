@@ -1,0 +1,17 @@
+.right-content img {
+  max-width: 900px; /* tamaño normal en escritorio */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 576px) {
+  .right-content {
+    display: flex;             /* activa flex para centrar */
+    justify-content: center;   /* centra la imagen horizontalmente */
+    margin-top: 20px;          /* opcional: separación del texto superior */
+  }
+
+  .right-content img {
+    max-width: 90%;            /* reduce el tamaño de la imagen */
+    height: auto;              /* mantiene proporción */
+  }
+}

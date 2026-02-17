@@ -1,0 +1,43 @@
+.banner,
+.banner * {
+  max-height: none !important;
+}
+
+.banner {
+  overflow: visible !important;
+  height: auto !important;
+  display: block !important;
+}
+
+.banner-img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+
+/* --- Desktop / PC: mismo aspecto que tenías (650px, cover) --- */
+@media (min-width: 992px) {
+  .banner-img {
+    height: 650px;
+    object-fit: cover;   /* mantiene el recorte visual tipo "hero" en desktop */
+    object-position: center center;
+  }
+}
+
+/* --- Tablet / Móvil: mostrar la imagen completa sin recortes --- */
+@media (max-width: 991.98px) {
+  .banner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .banner-img {
+    height: auto !important;     /* permite que la altura se adapte */
+    object-fit: contain !important; /* muestra la imagen entera */
+    object-position: center center !important;
+    width: 100vw !important;     /* ocupa todo el ancho del viewport */
+    max-width: 100vw !important;
+  }
+}
