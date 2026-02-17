@@ -16,14 +16,14 @@ function App() {
   return (
     <>
 <NavBar/>
-
+<Logo/>
 <BannerPrincipal/>
 
 <LeftRightWrapper/>
 <Spoty/>
 
 <ContainerFoto/>
-<Logo/>
+
 <Footer/>
     </>
   )
