@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
+
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,16 +31,30 @@ const NavBar = () => {
           </button>
 
           {/* Lista de navegación */}
-          <ul
-            className={`nav-list ${
-              menuOpen ? "d-flex flex-column" : "d-none"
-            } d-md-flex gap-3`}
-          >
-            <li>Inicio</li>
-            <li>Discografía</li>
-            <li>Fechas</li>
-            <li>Contacto</li>
-          </ul>
+      <ul
+  className={`nav-list ${
+    menuOpen ? "d-flex flex-column" : "d-none"
+  } d-md-flex gap-3`}
+>
+  <li>
+    <Link to="/">Inicio</Link>
+  </li>
+
+  <li>
+    <Link to="/fechas">Fechas</Link>
+  </li>
+
+  <li className="social-icon">
+    <a
+      href="https://wa.me/5493434624862"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Contacto
+    </a>
+  </li>
+</ul>
+
         </div>
       </nav>
     </header>

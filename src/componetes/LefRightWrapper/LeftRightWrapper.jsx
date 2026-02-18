@@ -13,7 +13,6 @@ const LeftRightWrapper = () => {
 
         {/* Right ocupa 8 columnas */}
         <div className="col-12 col-md-4 d-flex justify-content-end">
-          <Right/>
         </div>
       </div>
     </div>
