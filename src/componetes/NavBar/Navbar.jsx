@@ -15,6 +15,9 @@ const NavBar = () => {
       <nav className="custom-navbar">
         <div className="nav-container d-flex justify-content-between align-items-center">
           <strong className="brand-name">OBSESSION</strong>
+<svg className="ecg" viewBox="0 0 500 60" preserveAspectRatio="none">
+  <path d="M0 30 L80 30 L100 10 L120 50 L140 30 L220 30 L240 5 L260 55 L280 30 L500 30" />
+</svg>
 
           {/* Botón hamburguesa visible solo en móviles */}
           <button

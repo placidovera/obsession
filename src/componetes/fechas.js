@@ -1,8 +1,7 @@
 
  const eventos=[
-    { id: 1,fecha: "10 Marzo", lugar: "Club Central", ciudad: "Paraná" },
-    { id: 2,fecha: "22 Marzo", lugar: "Bar Rock", ciudad: "Santa Fe" },
-    { id: 3,fecha: "5 Abril", lugar: "Festival Río", ciudad: "Rosario" }
+    { id: 1,fecha: "11 Abril", lugar: "Centro cultural-La vieja Usina", ciudad: "Paraná" },
+    { id: 2,fecha: "13 Junio", lugar: "Centro cultural-Juan L. Ortiz", ciudad: "Paraná" }
 ]
  export const getEvent = ()=>{
     return new Promise ( res =>{
